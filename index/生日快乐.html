@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+		#op{
+			width: 500px;
+			height: 500px;
+			
+			background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1753502766,2658065048&fm=26&gp=0.jpg) no-repeat 100%  100%;
+			margin: 100px auto;
+			position: relative;
+
+		}
+		div h1{
+			color: red;
+			font-size: 30px;
+			font-style: italic;
+			text-align: center;
+			
+			border-right: none;
+			border-left: none;
+
+		}
+		div	button{
+			position: fixed;
+			top: 100px;
+			right: 200px;
+			background: red;
+			border: 2px dashed orange;
+		}
+		.p{
+			height: 30px;
+			color: red;
+			font-size: 24px;
+			font-style: italic;
+			border-top: 2px groove red;
+			line-height: 30px;
+			text-align: center;
+
+		}div p{
+			animation: ziti 3s ease-in  infinite alternate ;
+			color: blue;
+			font-size: 28px;
+			font-weight: 700;
+			text-align: center;
+			margin-top: 15px;
+		}
+		#d	span{
+			
+			color: yellow;
+			font-size: 80px;
+			font-weight: 700;
+			text-align: center;
+			line-height: 60px;
+		}
+		#d{
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			top: 280px;
+			right: 30px;
+			background: green;
+			border: none;
+			border-radius: 50%;
+			text-align: center;
+		}
+		.l{
+			transform: rotate(1080000deg);
+			transition: all 3s ;
+		}
+		@keyframes ziti{
+            0%{ transform: scale(1);
+            }  
+            100%{
+            	transform: scale(0)  
+            }
+        }
+		@keyframes wanwan{
+            0%{ transform: scale(1);
+            }  
+            100%{
+            	transform: scale(0)  
+            }
+        }
+		.o{
+			animation: wanwan 3s ease-in  infinite alternate ;
+			transition: all 2s;
+		}
+		.e{
+			color: red;
+			transform: scale(2);
+			transition: all 3s;	
+		}
+		.nn{
+			width: 20px;
+			height: 80px;
+			background: pink;
+			float: left;
+			margin-left: 120px;
+			margin-top: 10px;
+			position: relative;
+			z-index: -11;
+
+		}
+		.mm{
+			width: 10px;
+			height: 30px;
+			float: left;
+			margin-left: 120px;
+			background: #cf4646;
+			border-radius: 50% 50% 0 0;
+			box-shadow: 0px 0px 14px 6px yellow;
+			
+
+		}
+		.mk{
+			margin-left: 135px;
+		}
+		.ml{
+			margin-left: 130px;
+		}
+		.hu{
+			width: 600px;
+			height: 600px;
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.h{
+		
+			height: 600px;
+			display: block;
+			position: relative;
+			z-index: 100;
+			background: url(./1.png) transparent no-repeat center top;
+			
+
+		}
+	</style>
+</head>
+<body>
+	<div id="op">
+		<div class="hu"></div>
+
+		<h1 id="a">HAPPY    BIRTHDAY  TO   ME </h1>
+		<button id="b">吹蜡烛</button>
+		<p  id="c" class="p">恭喜年龄突破二十三</p>
+		<p id="e">距离大龄青年又近了一步</p>
+		<div id="d"><span>L</span></div>
+		<div class="mm"></div>
+		<div class="mm mk" ></div>
+		<div class="mm ml"></div>
+		<div class="nn"></div>
+		<div class="nn"></div>
+		<div class="nn"></div>
+	</div>
+	<script type="text/javascript">
+		var oB = document.getElementById('b')
+		var oA = document.getElementById('a')
+		var oD = document.getElementById('d')
+		var oC = document.getElementById('c')
+		var oE = document.getElementById('e')
+		var oOp = document.getElementById('op')
+		var oMm = oOp.getElementsByClassName('mm')
+		var oHu = document.querySelector('.hu')
+		var oBody = document.body
+		console.log(oBody)
+		oB.onclick=function(){
+			oD.className = 'l';
+			oA.className = 'o';
+			oC.style.color = 'green';
+			oE.className = 'e';
+			
+			oBody.className = 'h'
+			for(var i=0;i<oMm.length;i++){
+				oMm[i].style.visibility=' hidden'
+			}
+			
+
+		}
+	</script>
+</body>
+</html>
